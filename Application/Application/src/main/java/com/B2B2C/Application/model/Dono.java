@@ -11,4 +11,19 @@ public class Dono extends Usuario{
     @Column( unique = true, nullable = false)
     private String conta_corrente;
 
+    public int getBanco() {
+        return banco;
+    }
+
+    public void setBanco(int banco) {
+        this.banco = banco;
+    }
+
+    public String getConta_corrente() {
+        return conta_corrente;
+    }
+
+    public void setConta_corrente(String conta_corrente) {
+        this.conta_corrente = conta_corrente;
+    }
 }

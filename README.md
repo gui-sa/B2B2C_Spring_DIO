@@ -4,7 +4,7 @@ Sistema B2B2C que interconecta Negócios - Entregadores - Usuários Usando Java 
 ## Padrões de Projeto Utilizado:
 - Singleton utilizado internamente no Spring @Bean e @Autowired
 - Strategy utilizado internamente no Spring @Service e @Repository
-- 
+  - O service instancia e altera as estrategias internamente ao Spring. Nesse caso chamamos somente a interface e quem instancia a implementação é o proprio String.
 
 ## Regras de Negocio:
 

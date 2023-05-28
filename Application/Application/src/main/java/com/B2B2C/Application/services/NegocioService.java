@@ -1,14 +1,15 @@
 package com.B2B2C.Application.services;
 
+
+import com.B2B2C.Application.dto.NegocioPost;
 import com.B2B2C.Application.model.Negocio;
-import java.util.List;
 
 public interface NegocioService {
-    List<Negocio> buscarTodosNegocios();
+    Iterable<Negocio> buscarTodosNegocios();
 
     Negocio buscarNegocioPorId(Long id);
 
-    void novoNegocioNoBD(Negocio negocio);
+    void novoNegocioNoBD(NegocioPost negocioPost);
 
     void deletarNegocioNoBD(Long id);
 
