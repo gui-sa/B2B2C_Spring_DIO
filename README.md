@@ -67,3 +67,8 @@ Ciclo de negocio:
 ## MySQL server:
 Para configurar o MySQL voce precisa ir ao arquivo *application.properties* <br>
 Lá, altere o URL, o nome do banco de dados, seu usuario e sua senha.
+
+## Mais:
+![image](https://github.com/gui-sa/B2B2C_Spring_DIO/assets/58073678/4963ed53-3e12-4288-8e75-27cbc0654644)
+![image](https://github.com/gui-sa/B2B2C_Spring_DIO/assets/58073678/3ed6ac6c-935f-4311-9a32-c5831bad6352)
+
