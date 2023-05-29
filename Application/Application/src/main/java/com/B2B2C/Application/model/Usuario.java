@@ -8,6 +8,8 @@ import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.CascadeType;
 
+
+
 @MappedSuperclass
 public abstract class Usuario {
 

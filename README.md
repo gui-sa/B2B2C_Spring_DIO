@@ -5,6 +5,7 @@ Sistema B2B2C que interconecta Negócios - Entregadores - Usuários Usando Java 
 - Singleton utilizado internamente no Spring @Bean e @Autowired
 - Strategy utilizado internamente no Spring @Service e @Repository
   - O service instancia e altera as estrategias internamente ao Spring. Nesse caso chamamos somente a interface e quem instancia a implementação é o proprio String.
+- Socket utilizado para adaptar uma classe em outra classe.
 
 ## Regras de Negocio:
 
@@ -62,3 +63,7 @@ Ciclo de negocio:
 ~~~
 ./gradlew bootRun
 ~~~
+
+## MySQL server:
+Para configurar o MySQL voce precisa ir ao arquivo *application.properties* <br>
+Lá, altere o URL, o nome do banco de dados, seu usuario e sua senha.

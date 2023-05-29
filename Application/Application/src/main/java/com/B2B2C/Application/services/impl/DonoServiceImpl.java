@@ -32,7 +32,7 @@ public class DonoServiceImpl implements DonoService {
 
     @Override
     public void novoDono(Dono dono) {
-
+        this.donoRepository.save(dono);
     }
 
     @Override

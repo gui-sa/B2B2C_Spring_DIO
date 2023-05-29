@@ -1,5 +1,6 @@
 package com.B2B2C.Application.controller;
 
+import com.B2B2C.Application.dto.DonoPost;
 import com.B2B2C.Application.model.Dono;
 import com.B2B2C.Application.services.DonoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,8 @@ import java.util.List;
 public class DonoRestController {
     @Autowired
     private DonoService donoService;
-
+   // @Autowired
+    //Dono dono;
     @GetMapping
     public ResponseEntity<?> buscarTodos() {
         List donos= new ArrayList<Dono>();
@@ -28,11 +30,11 @@ public class DonoRestController {
     }
 /**
     @PostMapping
-    public ResponseEntity<String> novoNegocioNoBD(@RequestBody NegocioPost negocioPost){
-        this.negocioService.novoNegocioNoBD(negocioPost);
-        return ResponseEntity.status(HttpStatus.OK).body("Salvo com Sucesso");
-    }*/
-
+    public ResponseEntity<String> novoDono(@RequestBody DonoPost donoPost) {
+        this.donoService.novoDono(donoPost.getDono(dono));
+        return ResponseEntity.status(HttpStatus.CREATED).body("Salvo com Sucesso");
+    }
+*/
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletarDonoNoBD(@PathVariable Long id){
         this.donoService.deletarDonoNoBD(id);

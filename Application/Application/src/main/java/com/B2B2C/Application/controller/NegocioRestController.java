@@ -34,12 +34,12 @@ public class NegocioRestController  {
     public ResponseEntity<?> buscarNegocioPorId(@PathVariable Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(this.negocioService.buscarNegocioPorId(id));
     }
-
+/**
     @PostMapping
     public ResponseEntity<String> novoNegocioNoBD(@RequestBody NegocioPost negocioPost){
         this.negocioService.novoNegocioNoBD(negocioPost);
         return ResponseEntity.status(HttpStatus.OK).body("Salvo com Sucesso");
-    }
+    }*/
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletarDonoNoBD(@PathVariable Long id){
         //System.out.println("TESTANDO " + id);
