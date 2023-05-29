@@ -41,8 +41,9 @@ public class NegocioRestController  {
         return ResponseEntity.status(HttpStatus.OK).body("Salvo com Sucesso");
     }
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> novoNegocioNoBD(@RequestBody Long id){
+    public ResponseEntity<Void> deletarDonoNoBD(@PathVariable Long id){
+        //System.out.println("TESTANDO " + id);
         this.negocioService.deletarNegocioNoBD(id);
-        return ResponseEntity.status(HttpStatus.OK).body("Removido com Sucesso!");
+        return ResponseEntity.ok().build();
     }
 }

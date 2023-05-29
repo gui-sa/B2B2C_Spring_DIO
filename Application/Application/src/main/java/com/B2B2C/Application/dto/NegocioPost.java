@@ -5,12 +5,6 @@ public class NegocioPost {
     private String cnpj;
     private String nome;
 
-    public NegocioPost(String cpf_dono, String cnpj, String nome) {
-        this.cpf_dono = cpf_dono;
-        this.cnpj = cnpj;
-        this.nome = nome;
-    }
-
     public String getCpf_dono() {
         return cpf_dono;
     }

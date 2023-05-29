@@ -8,7 +8,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.FetchType;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 
+import java.util.List;
 
 @Entity
 public class Negocio {
@@ -24,6 +28,9 @@ public class Negocio {
     private String cnpj;
     @Column( nullable = false)
     private String nome;
+
+    @OneToMany( mappedBy="negocio" , cascade = CascadeType.REMOVE )
+    private List<Produto> produtos;
 
     public long getId_negocio() {
         return id_negocio;

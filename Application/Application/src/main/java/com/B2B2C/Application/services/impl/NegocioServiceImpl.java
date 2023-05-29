@@ -1,9 +1,7 @@
 package com.B2B2C.Application.services.impl;
 
 import com.B2B2C.Application.dto.NegocioPost;
-import com.B2B2C.Application.model.Dono;
 import com.B2B2C.Application.model.Negocio;
-import com.B2B2C.Application.repository.DonoRepository;
 import com.B2B2C.Application.repository.NegocioRepository;
 import com.B2B2C.Application.services.NegocioService;
 import org.springframework.stereotype.Service;
